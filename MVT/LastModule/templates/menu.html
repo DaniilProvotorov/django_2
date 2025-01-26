@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Приют</title>
+</head>
+<body>
+    <h1>{%block pagename%}Главная страница{%endblock%}</h1>
+    {%block menu%}
+    <p><a href="http://127.0.0.1:8000/">Главная</a></p>
+    <p><a href="http://127.0.0.1:8000/cats/">Игры</a></p>
+    <p><a href="http://127.0.0.1:8000/func/">Дополнительные фунции</a></p>
+    {%endblock%}
+    {%block content%}
+    <a href="http://127.0.0.1:8000/"><button>Вернуться назад</button></a>
+    {%endblock%}
+</body>
+</html>

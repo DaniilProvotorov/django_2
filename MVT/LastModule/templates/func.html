@@ -1,0 +1,12 @@
+{% extends "menu.html"%}
+
+{%block pagename%}Дополнительные функции для нашего приюта{%endblock%}
+
+{%block content%}
+<ul>
+    {%for i in list_f%}
+        <li>{{i}}<a><button>тык</button></a></li>
+    {%endfor%}
+</ul>
+{{block.super}}
+{%endblock%}
