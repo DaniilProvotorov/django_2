@@ -1,0 +1,12 @@
+{% extends "menu.html"%}
+
+{%block pagename%}Коты{%endblock%}
+
+{%block content%}
+<ul>
+    {%for i in games%}
+        <li>{{i.title}}{{i.description}}. Стоимость: {{i.cost}}<a><button>ну пойдем!</button></a></li>
+    {%endfor%}
+</ul>
+{{block.super}}
+{%endblock%}
