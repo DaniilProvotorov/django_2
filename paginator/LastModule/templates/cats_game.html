@@ -1,0 +1,12 @@
+{%extends 'menu.html'%}
+
+{%block pagename%}Игры для котов{%endblock%}
+
+{%block content%}
+<ul>
+    {%for game in games%}
+    <li>{{game.title}}|{{dame.description}}. Стоимость: {{game.cost}}<a><button>Купить!</button></a></li>
+    {%endfor%}
+    {{block.super}}
+</ul>
+{%endblock%}
